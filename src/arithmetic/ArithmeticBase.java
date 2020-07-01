@@ -15,21 +15,22 @@ import java.util.Scanner;
  */
 public class ArithmeticBase 
 {
+    public enum OperationTypes{Onisha_PLUS,Onisha_MINUS,Onisha_TIMES,Onisha_DIVIDE};
  public double x,y;
     double calculate(double x, double y) 
         {
         Scanner sc =new Scanner(System.in);
         System.out.println("Enter arithmetic operation to Perform: ");
-        char s= sc.nextChar();
+        char s= sc.next().charAt(0);
         switch (s) 
         {
-            case "Onisha_PLUS":
+            case '+':
                 return x + y;
-            case "Onisha_MINUS":
+            case '-':
                 return x - y;
-            case "Onisha_TIMES":
+            case '*':
                 return x * y;
-            case "Onisha_DIVIDE":
+            case '/':
                 return x / y;
             default:
                 throw new AssertionError("Unknown operations " + this);
