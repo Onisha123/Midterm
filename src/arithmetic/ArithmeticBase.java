@@ -20,16 +20,16 @@ public class ArithmeticBase
         {
         Scanner sc =new Scanner(System.in);
         System.out.println("Enter arithmetic operation to Perform: ");
-        String s= sc.next();
-        switch (s.toUpperCase()) 
+        char s= sc.nextChar();
+        switch (s) 
         {
-            case "PLUS":
+            case "Onisha_PLUS":
                 return x + y;
-            case "MINUS":
+            case "Onisha_MINUS":
                 return x - y;
-            case "TIMES":
+            case "Onisha_TIMES":
                 return x * y;
-            case "DIVIDE":
+            case "Onisha_DIVIDE":
                 return x / y;
             default:
                 throw new AssertionError("Unknown operations " + this);
